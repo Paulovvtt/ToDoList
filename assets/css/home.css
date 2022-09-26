@@ -1,0 +1,232 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+:root{
+    --cor1: #212121;
+    --cor2: #9381b4;
+    --cor3: #fff;
+}
+
+.dark{
+    --cor1: #fff;
+    --cor2: #9381b4;
+    --cor3: #212121;
+    background-color: var(--cor3);
+}
+        @font-face {
+    font-family: "TodoFont";
+    src: url(fonts/FoniaRegular.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+    @font-face {
+    font-family: "TodoFont2";
+    src: url(fonts/GraphikRegular.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'TodoFont';
+    font-weight: normal;
+    color: var(--cor1);
+    text-align: left;
+    letter-spacing: -2px;
+}
+h1{
+    font-size: 175px;
+    letter-spacing: -10px;
+    line-height: 1;
+    padding: none;
+    bottom: 40px;
+    left: 35%;
+    position: relative;
+    background:none;
+}
+p {
+    font-family: 'TodoFont2';
+    font-size: 32px;
+    font-weight: normal;
+    position: relative;
+    bottom: 40px;
+    left: 55%;
+    background: none;
+}
+label {
+    font-size: 32px;
+    color: var(--cor2);
+    position: absolute;
+    margin: 2px;
+    z-index: 1;
+    background: none;
+    left: 30px;
+    top: -3px;
+}
+.logo {
+    width: 32px;
+    height: 32px;
+    margin: 1%;
+    cursor: pointer;
+} 
+
+#icon {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    margin: 1%;
+    position: absolute;
+    right: 10px;
+}
+.Ilus{
+    width: 70%;
+    height: 90%;
+    position: fixed;
+    right: 150px;
+    top: 275px;
+    background:none;
+    transition: bottom 1s;
+}
+.Ilus img{
+    position:absolute;
+    bottom: 0;
+    right: 75rem;
+    transform: translateY(-50%);
+    transition: bottom 1s;
+    background: none;
+}
+.Ilus:hover .Fundo{
+    bottom: -25px;    
+}
+.Ilus:hover .Checks{
+    bottom: 12.5px;    
+}
+.Ilus:hover .Garota{
+    bottom: 2px;    
+}
+
+.contanier {
+    display: inline-block;
+    align-items: center;
+    padding-top: 150px;
+    position: fixed;
+    z-index: 1;
+    left: 20px;
+    background:none;
+}
+button{
+    position: absolute;
+    left: 38%;
+    top: 71%;
+    background: none;
+    font-family: 'TodoFont';
+    color: var(--cor2);
+    border: 2px solid;
+    border-radius: 100px;
+    padding: 1em 2em;
+    font-size: 25px;
+    transition: all 0.3s;
+}
+button:hover{
+    border-color: #ab94db;
+    color: var(--cor1);
+    box-shadow: 0 0.5em 0.5em -0.4em #ab94db;
+    transform: translateY(-0.30em);
+    cursor:pointer
+}
+@media (max-width: 1000px) {
+    .Ilus {
+    left: 50px;
+    position:fixed;
+    }
+    h1{
+        font-size: 100px;
+        top: 325px;
+        left: 200px;
+        letter-spacing: -5px;
+    }
+    p{
+        font-size: 25px;
+        top: 325px;
+        left: 150px;
+        letter-spacing: -2px;
+        text-align: center;
+    }
+    button{
+        position: absolute;
+        left: 38%;
+        top: 82%;
+   }
+   label {
+    font-size: 25px;
+    left: 30px;
+    top: -1px;
+   }
+   .logo {
+    width: 25px;
+    height: 25px;
+} 
+    #icon {
+    width: 25px;
+    height: 25px;
+}
+}
+@media (max-width: 415px) {
+    .Fundo {
+    width: 300px;
+    height: 425px;
+    position:fixed;
+    top: 0px;
+    }
+    .Garota {
+        width: 300px;
+        height: 425px;
+        position:fixed;
+        top: 1px;
+        }
+    .Checks {
+        width: 300px;
+        height: 425px;
+        position:fixed;
+        top: 0px;
+        left: 20px;
+     }
+    h1{
+        font-size: 70px;
+        top: 325px;
+        left: -10px;
+        letter-spacing: -5px;
+    }
+    p{
+        font-size: 20px;
+        top: 325px;
+        left: -10px;
+        letter-spacing: -2px;
+        text-align: center;
+
+    }
+    button{
+        position: absolute;
+        left: 10%;
+        top: 82%;
+   }
+   label {
+    font-size: 25px;
+    left: 30px;
+    top: -1px;
+   }
+   .logo {
+    width: 25px;
+    height: 25px;
+} 
+    #icon {
+    width: 25px;
+    height: 25px;
+}
+}
+   
+
+   
+   
+   
+   
